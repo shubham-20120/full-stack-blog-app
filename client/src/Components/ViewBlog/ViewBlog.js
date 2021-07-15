@@ -10,7 +10,7 @@ const ViewBlog = () => {
     const [author, setAuthor] = useState('Denied to display')
     console.log(state);
     useEffect(() => {
-        fetch("http://localhost:5000/get-user-name-by-id", {
+        fetch("/get-user-name-by-id", {
             method: 'post',
             headers: {
                 "Content-Type": "application/json",

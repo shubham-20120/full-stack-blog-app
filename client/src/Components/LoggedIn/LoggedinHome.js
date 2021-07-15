@@ -53,7 +53,7 @@ const LoggedinHome = () => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        fetch("http://localhost:5000/all-posts", {
+        fetch("/all-posts", {
             method: 'get',
             headers: {
                 "Content-Type": "application/json",

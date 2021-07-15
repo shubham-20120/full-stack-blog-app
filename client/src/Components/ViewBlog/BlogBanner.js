@@ -23,7 +23,7 @@ const BlogBanner = (props) => {
             }, 1000)
             return;
         }
-        fetch("http://localhost:5000/delete-blog", {
+        fetch("/delete-blog", {
             method: 'post',
             headers: {
                 "Content-Type": "application/json",

@@ -11,7 +11,7 @@ import ViewBlog from './ViewBlog';
 const AllMyBlogList = () => {
     const [blogData, setBlogData] = useState([]);
     useEffect(() => {
-        fetch("http://localhost:5000/my-blog", {
+        fetch("/my-blog", {
             method: "get",
             headers: {
                 "Content-Type": "application/json",

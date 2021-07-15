@@ -25,7 +25,7 @@ const CreatePost = () => {
     }, [])
     useEffect(() => {
         if (cloudinaryLink) {
-            fetch("http://localhost:5000/make-blog", {
+            fetch("/make-blog", {
                 method: "post",
                 headers: { "Content-Type": "application/json", authorization: localStorage.getItem('userToken') },
                 body: JSON.stringify({

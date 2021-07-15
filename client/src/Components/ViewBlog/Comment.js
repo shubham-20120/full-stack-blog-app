@@ -39,7 +39,7 @@ const Comment = ({ blogId }) => {
     const [refresh, setRefresh] = useState(true);
     toast.configure();
     useEffect(() => {
-        fetch("http://localhost:5000/get-comments", {
+        fetch("/get-comments", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -61,7 +61,7 @@ const Comment = ({ blogId }) => {
     }, [])
 
     const sendCommentToBackend = () => {
-        fetch("http://localhost:5000/comments", {
+        fetch("/comments", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

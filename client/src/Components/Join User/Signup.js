@@ -20,7 +20,7 @@ const Signup = () => {
             toast.error("passwords must be same")
             return;
         }
-        fetch("http://localhost:5000/signup", {
+        fetch("/signup", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
