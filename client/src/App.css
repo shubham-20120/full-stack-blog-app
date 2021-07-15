@@ -7,6 +7,15 @@
   pointer-events: none;
 }
 
+.mobileMessage{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  flex-direction: column;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

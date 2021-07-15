@@ -1,19 +1,12 @@
 import React from 'react';
 import './BlogBanner.css';
-import { Button } from '@material-ui/core';
 import {
-    BrowserRouter as Router,
-    Route,
-    Link,
-    Switch
+    Link
 } from 'react-router-dom';
-import ViewBlog from './ViewBlog';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const BlogBanner = (props) => {
-    console.log('props from BlogBanner');
-    console.log(props);
     toast.configure();
     const deleteBlog = (blogId) => {
         if (props.owener != localStorage.getItem('userId')) {

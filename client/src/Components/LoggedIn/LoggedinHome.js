@@ -31,7 +31,7 @@ const LoggedinHomeContainer = ({ allPostsData }) => {
                         {
                             allPostsData.length ?
                                 allPostsData.map((blog, index) => {
-                                    return <BlogBanner owener={blog.owener} title={blog.title} photo={blog.headerPhoto} paras={blog.description} date={blog.createdAt} blogId={blog._id} />
+                                    return <div key={index}><BlogBanner owener={blog.owener} title={blog.title} photo={blog.headerPhoto} paras={blog.description} date={blog.createdAt} blogId={blog._id} /></div>
                                 })
                                 :
                                 <>
@@ -60,7 +60,6 @@ const LoggedinHome = () => {
                 authorization: localStorage.getItem('userToken')
             }
         }).then(res => res.json()).then(data => {
-            console.log(data);
             setAllPostsData(data);
         })
 

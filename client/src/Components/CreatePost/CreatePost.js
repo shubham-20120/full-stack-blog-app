@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import { MDBInput } from "mdbreact";
 import './CreatePost.css'
-import { Input } from '@material-ui/core';
 import { Button } from '@material-ui/core';
 import ViewBlog from '../ViewBlog/ViewBlog';
-import { Link, BrowserRouter, Route, useHistory } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import CircularProgress from '@material-ui/core/CircularProgress';
+// import CircularProgress from '@material-ui/core/CircularProgress';
 const CreatePost = () => {
     const [allParas, setAllParas] = useState([]);
     const [tempString, setTempString] = useState('');
@@ -65,18 +64,9 @@ const CreatePost = () => {
         setAllParas([]);
     }
     const addParagraph = () => {
-        // if (!tempString) {
-        //     return;
-        // }
         setAllParas([...allParas, tempString]);
         setTempString('');
     }
-    // const previewHandle = () => {
-    //     if (!title || allParas.length === 0) {
-    //         return;
-    //     }
-    //     setPreview(!preview)
-    // }
     const toPreview = {
         pathname: `/preview/${localStorage.getItem('userToken').slice(5, 8)}`,
         state: {

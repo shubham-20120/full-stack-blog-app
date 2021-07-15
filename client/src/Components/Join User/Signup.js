@@ -5,7 +5,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import 'bootstrap-css-only/css/bootstrap.min.css';
 import 'mdbreact/dist/css/mdb.css';
 import { Button } from '@material-ui/core';
-import { Link, BrowserRouter, useHistory } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 const Signup = () => {

@@ -9,7 +9,7 @@ import {
 const Navbar = () => {
     return (
         <div className='navbar-main'>
-            <div className="navbar-left"> < Link className="navbar-left" to='/'>Share Plus</Link> </div>
+            <div className="navbar-left" style={{ width: '150px' }}> < Link className="navbar-left" to='/'>Share Plus</Link> </div>
             <div className="navbar-right">
                 <Link to='signin'> <Button variant="contained" color="secondary">Sign In</Button></Link>
                 <Link to='signup'> <Button variant="contained" color="secondary">Sign Up</Button></Link>

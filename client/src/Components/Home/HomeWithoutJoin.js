@@ -1,12 +1,10 @@
 import React, { useState } from 'react'
 import './HomeWithoutJoin.css';
-import transitions from '@material-ui/core/styles/transitions';
 import Navbar from '../navbar/Navbar';
 import Button from '@material-ui/core/Button';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import {
-    BrowserRouter as Router,
     Route,
     Link
 } from 'react-router-dom';

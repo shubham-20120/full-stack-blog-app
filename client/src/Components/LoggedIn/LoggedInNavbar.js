@@ -2,8 +2,6 @@ import React from 'react'
 import './LoggedInNavbar.css';
 import Button from '@material-ui/core/Button';
 import {
-    BrowserRouter as Router,
-    Route,
     Link,
     useHistory
 } from 'react-router-dom';
@@ -25,7 +23,7 @@ const LoggedInNavbar = () => {
     }
     return (
         <div className='LoggedinNav-main'>
-            <div className="LoggedinNav-left">< Link className="navbar-left" to='/'>Share Plus</Link></div>
+            <div className="LoggedinNav-left" style={{ width: '150px' }}>< Link className="navbar-left" to='/'>Share Plus</Link></div>
             <div className="LoggedinNav-right">
                 <Link to='/my-blog'><div className="LoggedinNav-myposts LoggedinNav-right-btns"><Button color="inherit">My Posts</Button></div></Link>
                 <Link to='/create-blog'><div className="LoggedinNav-Create LoggedinNav-right-btns"><Button color="inherit">Create Post</Button></div></Link>

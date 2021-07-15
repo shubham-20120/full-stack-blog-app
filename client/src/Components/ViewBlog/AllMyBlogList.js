@@ -1,15 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import './BlogBanner.css';
 import BlogBanner from './BlogBanner';
-import {
-    BrowserRouter as Router,
-    Route,
-    Link
-} from 'react-router-dom';
-import ViewBlog from './ViewBlog';
-
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const AllMyBlogList = () => {
     const [blogData, setBlogData] = useState([]);
+    toast.configure();
+
     useEffect(() => {
         fetch("/my-blog", {
             method: "get",
@@ -19,13 +16,10 @@ const AllMyBlogList = () => {
             }
         }).then(res => res.json()).then(data => {
             if (data.error) {
-                alert(data.error);
+                toast.error(data.error);
                 return;
             }
-            // console.log('data');
-            // console.log(data);
             setBlogData(data);
-
         })
     }, [])
 
