@@ -15,8 +15,6 @@
   "author": "shubham patel",
   "license": "ISC",
   "dependencies": {
-    "config": "3.3.1",
-    "express": "*",
-    "body-parser": "*"
+    "config": "3.3.1"
   }
 }
