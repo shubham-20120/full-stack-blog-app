@@ -45,7 +45,6 @@ const HomeWithoutJoin = () => {
                     <Route path='/signin' exact component={Signin} />
                     <Route path='/signup' component={Signup} />
                 </div>
-                {/* {toast.success('Please Login to access all functionality')} */}
             </div>
 
     )

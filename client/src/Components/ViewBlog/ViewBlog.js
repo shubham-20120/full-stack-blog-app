@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './ViewBlog.css';
-import headerPhoto from '../Images/back.jpg';
-import { Link, useParams, useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import Comment from './Comment';
-// import { blue } from '@material-ui/core/colors';
 
 const ViewBlog = () => {
     const { state } = useLocation();

@@ -6,7 +6,6 @@ import 'react-toastify/dist/ReactToastify.css';
 const AllMyBlogList = () => {
     const [blogData, setBlogData] = useState([]);
     toast.configure();
-
     useEffect(() => {
         fetch("/my-blog", {
             method: "get",

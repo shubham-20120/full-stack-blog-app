@@ -6,8 +6,6 @@ import CircularProgress from '@material-ui/core/CircularProgress';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 const ShowComments = ({ totalComments }) => {
-    console.log('totalComments from showComments');
-    // console.log(totalComments);
     return (
         <div className="showComments-main">
             <b style={{ fontSize: '1.5rem', textAlign: 'center' }}>Comments</b>
@@ -85,7 +83,6 @@ const Comment = ({ blogId }) => {
     return (
         <div className='comment-main'>
             <div className="doComment-container">
-                {/* <div className='docomment-input'><MDBInput type='text' label="Name" icon="envelope" /></div> */}
                 <div className='docomment-input'><MDBInput
                     type="textarea"
                     label="Thoughts on this Blog"

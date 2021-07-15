@@ -10,7 +10,6 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const LoggedInNavbar = () => {
     toast.configure()
-
     const history = useHistory();
     const logOutFunc = () => {
         localStorage.removeItem("userToken");

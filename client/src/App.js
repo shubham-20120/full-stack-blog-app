@@ -7,12 +7,7 @@ import {
   Route,
   Link
 } from 'react-router-dom';
-import Signin from './Components/Join User/Signin';
-import Signup from './Components/Join User/Signup';
-import LoggedInNavbar from './Components/LoggedIn/LoggedInNavbar';
 import LoggedinHome from './Components/LoggedIn/LoggedinHome';
-import CreatePost from './Components/CreatePost/CreatePost';
-import { useMediaQuery } from 'react-responsive';
 import { Button } from '@material-ui/core';
 
 

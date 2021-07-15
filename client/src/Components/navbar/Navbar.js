@@ -2,8 +2,6 @@ import React from 'react';
 import Button from '@material-ui/core/Button';
 import './Navbar.css';
 import {
-    BrowserRouter as Router,
-    Route,
     Link
 } from 'react-router-dom';
 const Navbar = () => {

@@ -12,7 +12,6 @@ const PreviewCreatingBlog = () => {
     const [paras, setParas] = useState([]);
     const [date, setDate] = useState('');
     const [loading, setLoading] = useState(true);
-    // const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         try {
