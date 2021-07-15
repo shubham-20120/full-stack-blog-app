@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@500&display=swap');
+.signin-main{
+    width: 25vw;
+    height: 85vh;
+    border-radius: 10px;
+    background-color: #35720460;
+    box-shadow: 0 0 50px 2px #0F1C0460;
+    margin: 15vh 0 0 25vw;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.signin-upper{
+    height: 25%;
+    /* margin-top: -10px; */
+    /* background-color: rosybrown; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.signin-title{
+    font-family: 'Lobster', cursive;
+    color: rgb(0, 17, 252);
+    font-size: 2.2rem;
+}
+.signin-signin{
+    font-size: 1.5rem;
+    /* background-color: turquoise; */
+    margin-top: -40px;
+    color: white;
+    font-family: 'Karla', sans-serif;
+}
+.signin-middle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* background-color: brown; */
+    height: 60%;
+    margin-top: -60px;
+}
+.signin-temp{
+    width: 70% ;
+    /* margin-top: -15px; */
+}
+.signin-bottom-notice{
+   margin-top: 15px;
+    text-align: center;
+    color: rgb(21, 4, 255);
+    font-size: 1.1rem;
+    margin-top: -20px;
+}
+.mbd-input-color{
+    color: rgb(4, 21, 119) !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  extra */
+.md-form label {
+  color: rgb(255, 255, 255) !important;
+}
+.md-form .md-outline{
+    color: blue !important;
+}
+
+.fa{
+    color: white !important;
+    margin-top: 10px;
+    margin-left: 5px;
+    font-size: 1.5rem !important;
+}

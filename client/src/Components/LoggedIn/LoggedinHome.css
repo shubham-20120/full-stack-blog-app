@@ -1,0 +1,8 @@
+.loggedinhome-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    background-color: rgba(50, 66, 49, 0.425);
+    flex-direction: column;
+}

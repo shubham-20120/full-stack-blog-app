@@ -1,0 +1,35 @@
+.LoggedinNav-main{
+    height: 6vh;
+    background-color: rgba(127, 255, 212, 0.445);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px 0 30px;
+    position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+}
+.LoggedinNav-left{
+    color: rgb(0, 38, 255);
+    font-size: 1.7rem;
+    font-family: 'Lobster', cursive;
+}
+.LoggedinNav-right{
+    width: 25vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* height: 6vh; */
+}
+.LoggedinNav-right-btns{
+    color: black;
+    font-weight: 600;
+    font-size: 1.1rem;
+    /* background-color: blueviolet; */
+    height: 6vh;
+    padding: 0 5px 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}

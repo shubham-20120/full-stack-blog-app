@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+.navbar-main{
+    display: flex;
+    align-items: center;
+    height: 7vh;
+    justify-content: space-between;
+    padding: 0 40px 0 60px;
+    background-color: rgb(107, 255, 198, 0);
+}
+.navbar-left{
+    color: rgb(0, 38, 255);
+    font-size: 1.7rem;
+    font-family: 'Lobster', cursive;
+}
+.navbar-right{
+    /* background-color: blue; */
+    width: 20vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.MuiButton-label{
+    margin: -1.5px 0;
+}

@@ -1,0 +1,40 @@
+.blogBanner-main{
+    height: auto;
+    min-height: 94vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.253);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+.blogBanner-container{
+    width: 800px;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.479);
+    margin: 20px 0;
+    border-radius: 10px;
+    display: flex;
+    padding: 5px;
+}
+
+.blogBanner-right{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    flex-direction: column;
+}
+.blogBanner-title{
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding: 10px;
+    /* padding-left: ; */
+}
+.blogBanner-btns{
+    width: 100%;
+    /* background-color: teal; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

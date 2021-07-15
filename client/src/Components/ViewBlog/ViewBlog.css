@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+.viewblog-main{
+    background-color: rgba(128, 128, 128, 0.26);
+    display: flex;
+    flex-direction: column;
+}
+
+.viewblog-heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 1vh;
+    height: 100vh;
+    /* background-color: blue; */
+    flex-direction: column;
+}
+.viewblog-title{
+    font-size: 1.8rem;
+    margin: 30px 0;
+    font-family: sans-serif;
+    width: 65vw;
+}
+.viewvlog-photo{
+    height: 75vh;
+    width: 65vw;
+    border-radius: 8px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.viewblog-aboutpost{
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.1rem;
+    font-weight: 300;
+    margin: 10px 30px 0 30px;
+}
+.viewblog-lower{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: hotpink; */
+    background-color: rgba(128, 128, 128, 0.253);
+    margin: 3.5vh 2vw;
+    border-radius: 10px;
+}
+.viewblog-left{
+    font-family: 'Ubuntu', sans-serif;
+    width: 65vw;
+    padding: 10px 20px;
+    font-size: 1.3rem;
+    /* font-weight: 600; */
+    border-radius: 10px;
+    transition: 0.8s;
+}
+.viewblog-right{
+    width: 30vw;
+    height: 94vh;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    transition: 0.8s;
+    border-radius: 10px;
+}
+.viewblog-left:hover, .viewblog-right:hover{
+    background-color: rgba(160, 158, 158, 0.397);
+}
+.comment-main{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.doComment-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    padding: 10px 10px 20px 10px;
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.253);
+    border-radius: 10px;
+}
+.docomment-input{
+    width: 80% !important;
+}
+.showComments-main{
+    height: auto;
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.253);
+color: lavender;
+    border-radius: 10px;
+    padding: 10px;
+}
+.total-comments{
+    height: 30vh;
+    overflow-wrap: break-word;
+    overflow-y: scroll;
+}
+.viewblog-author span:hover, .viewblog-date span:hover{
+cursor: pointer;
+}
