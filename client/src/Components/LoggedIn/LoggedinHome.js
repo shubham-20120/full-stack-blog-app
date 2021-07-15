@@ -29,7 +29,7 @@ const LoggedinHomeContainer = ({ allPostsData }) => {
                     :
                     <>
                         {
-                            allPostsData.length ?
+                            (allPostsData == null || allPostsData.length) ?
                                 allPostsData.map((blog, index) => {
                                     return <div key={index}><BlogBanner owener={blog.owener} title={blog.title} photo={blog.headerPhoto} paras={blog.description} date={blog.createdAt} blogId={blog._id} /></div>
                                 })
@@ -50,7 +50,6 @@ const LoggedinHomeContainer = ({ allPostsData }) => {
 
 const LoggedinHome = () => {
     const [allPostsData, setAllPostsData] = useState(null);
-    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         fetch("/all-posts", {
@@ -68,7 +67,7 @@ const LoggedinHome = () => {
 
     const userToken = localStorage.getItem('userToken');
     return (
-        userToken ?
+        (userToken == undefined || userToken == null || userToken == '') ? <HomeWithoutJoin /> :
             <div className='loggedinhome-main'>
                 <Router>
                     <LoggedInNavbar />
@@ -79,8 +78,7 @@ const LoggedinHome = () => {
                     <Route exact path='/create-blog' component={CreatePost} />
                 </Router>
             </div>
-            :
-            <HomeWithoutJoin />
+
     )
 }
 
